@@ -1,1 +1,304 @@
-<h1> Hello world !</h1>
+<head>
+<script src="https://kit.fontawesome.com/21387eecb7.js" crossorigin="anonymous"></script>
+<style>
+    :root{
+        --fiig-purple-darken: #56203d;
+    }
+
+    * {
+        font-family: 'Source Sans Pro',sans-serif;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background-color:#F0E7D8;
+        margin: 0;
+    }
+
+    h1 {
+        color: #56203d;
+        font-weight: bold;
+    }
+
+    h2 {
+
+    }
+
+    h3 {
+
+    }
+
+    #background {
+        position: sticky;
+        top: 0;
+        left: 0
+    }
+
+    #accueil {
+        position: absolute;
+        top: 30%;
+        padding: 2%;
+    }
+    
+    #fiig {
+        color: var(--fiig-purple-darken);
+        outline: 0.3rem solid var(--fiig-purple-darken);
+        border-radius: 1rem;
+        max-width: 50%;
+        min-width: 10rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #fiig > .image {
+        border-radius: 1rem;
+    }
+
+    #socials {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .social-icon {
+        color: #56203d;
+        margin: 7px;
+        margin-bottom: auto;
+        font-size: 2rem;
+    }
+
+    #git  {
+        width: 100%;
+        background-color:#F0E7D8;
+        display: flex;
+        position: relative;
+        text-align: center;
+    }
+
+    #git > .container {
+        position: relative;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #minecraft {
+        width: 100%;
+        height:100%;
+        background-color:#8075ff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    #minecraft > .container {
+        position: relative;
+        width: 100%;
+    }
+
+    #partenaires {
+        position:relative;
+        background-color:#F0E7D8;
+        text-align: center;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+    #statistiques {
+        position:relative;
+        background-color:#8075ff;
+        text-align: center;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+    #edition-2022 {
+        position:relative;
+        background-color:#F0E7D8;
+        text-align: center;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+    #edition-2022 > div > img {
+        border-radius: 1rem;
+        outline: 1rem solid #F0E7D8;
+    }
+
+    
+
+    .image {
+        max-width: 100%;
+        max-height: 100%;  
+        display: block;
+    }
+
+    .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #56203d;
+    }
+
+    .container:hover .overlay {
+        opacity: 1;
+    }
+
+    .partenaire {
+        width: 20%;
+        margin: 2.5%;
+        padding: 2%;
+        background-color: #F0E7D8;
+        outline: 1rem solid #8075ff;
+        border-radius: 1rem;
+    }
+
+    .partenaire > a > img {
+        max-width: 100%;
+    }
+
+    .stats-circle {
+        background-color: #56203d;
+        border-radius: 4rem;
+        width: 8rem;
+        height: 100%;
+        line-height: 8rem;
+        color:#F0E7D8;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .stats > span {
+        color: #56203d;
+        font-size: 2rem;
+    }
+
+    .stats-circle > span, .stats > span {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .stats {
+        display:flex;
+        height: 8rem;
+        line-height: 8rem;
+        margin: 2rem;
+        min-width: 20%;
+    }
+
+
+</style>
+</head>
+
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <div id="background">
+            <img src="image14.png">
+        </div>
+
+        <div id="accueil">
+            <div id="fiig">
+                <img class="image" src="fiig_banner.png">
+            </div>
+            <br>
+            <div id="socials">
+                <a class="social-icon" href="https://twitter.com/gaming_insa"><i class="fa-brands fa-twitter"></i></a>
+                <a class="social-icon" href="https://www.facebook.com/FederationInterINSAsdeGaming/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a class="social-icon" href="https://discord.gg/RRknBKaGcQ"><i class="fa-brands fa-discord"></i></a>
+                <a class="social-icon" href="mailto:fiiginsa@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                <a class="social-icon" href="https://www.instagram.com/fiiginsa/"><i class="fa-brands fa-instagram"></i></a>
+                <a class="social-icon" href="https://www.twitch.tv/gaminginsatournament"><i class="fa-brands fa-twitch"></i></a>
+            </div>
+            <!--div id="tabs">
+                <a href="#partenaires">PARTENAIRES</a>
+                <a href="#stats">STATISTIQUES</a>
+                <a href="#edition-2022">EDITION 2021-2022</a>
+            </div-->
+        </div>
+
+        <div id="git">
+            <div class="container">
+                <img src="affiche_git_2021_logo_aei_a4.png" class="image">
+                <div class="overlay">
+                    <div class="text">Ceci est le GIT</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="minecraft">
+            <div class="container">
+                <img src="image14.png" class="image">
+                <div class="overlay">
+                    <div class="text">Ceci est le serveur Minecraft</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="partenaires">
+            <h1>PARTENAIRES</h1>
+            <div style="display:flex;justify-content: center;">
+                <div class="partenaire">
+                    <a>
+                        <img src="logo-aei.png">
+                    </a>
+                </div>
+                <div class="partenaire">
+                    <a>
+                        <img src="logo-minestrator.jpg">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="statistiques">
+            <h1>STATISTIQUES</h1>
+            <div style="display:flex; flex-wrap: wrap;">
+                <div class="stats"><div class="stats-circle"><span>300</span></div><span style="margin-left:1rem">participants aux tournois</span></div>
+                <div class="stats"><div class="stats-circle"><span>350</span></div><span style="margin-left:1rem">inscrits sur le serveur Minecraft</span></div>
+                <div class="stats"><div class="stats-circle"><span>300</span></div><span style="margin-left:1rem">followers sur la chaîne Twitch</span></div>
+                <div class="stats"><div class="stats-circle"><span>4.400</span></div><span style="margin-left:1rem">spectateurs en "vues lives" sur la chaîne Twitch</span></div>
+                <div class="stats"><div class="stats-circle"><span>10.000</span></div><span style="margin-left:1rem">personnes touchées par notre publication Facebook la plus populaire.</span></div>
+            </div>
+            
+        </div>
+
+        <div id="edition-2022">
+            <h1>EDITION PRECEDENTE</h1>
+            <div>
+                <img src="classement_2022.jpg">
+            </div>
+        </div>
+
+        <div id="about">
+
+        </div>
+
+    </body>
+</html>
