@@ -31,16 +31,26 @@
 
     }
 
+    body {
+        background-image: url('minecraft_banner.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
     #background {
         position: sticky;
         top: 0;
-        left: 0
+        left: 0;
+        max-width: 100vw;
+        max-height: 100vh;
     }
 
     #accueil {
-        position: absolute;
-        top: 30%;
-        padding: 2%;
+        height: 100vh;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
     }
     
     #fiig {
@@ -58,16 +68,24 @@
     }
 
     #socials {
+        outline: 0.3rem solid var(--fiig-purple-darken);
+        border-radius: 1rem;
+        background-color:#eff7fa;
         display: flex;
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
     }
 
+    #socials-container {
+        display: flex;
+        justify-content: center;
+    }
+
     .social-icon {
         color: #56203d;
         margin: 7px;
-        margin-bottom: auto;
+        margin-bottom: 3px;
         font-size: 2rem;
     }
 
@@ -219,22 +237,24 @@
 <html>
     <body>
 
-        <div id="background">
+        <!--div id="background">
             <img src="image14.png">
-        </div>
+        </div-->
 
         <div id="accueil">
             <div id="fiig">
                 <img class="image" src="fiig_banner.png">
             </div>
             <br>
-            <div id="socials">
-                <a class="social-icon" href="https://twitter.com/gaming_insa"><i class="fa-brands fa-twitter"></i></a>
-                <a class="social-icon" href="https://www.facebook.com/FederationInterINSAsdeGaming/"><i class="fa-brands fa-facebook-f"></i></a>
-                <a class="social-icon" href="https://discord.gg/RRknBKaGcQ"><i class="fa-brands fa-discord"></i></a>
-                <a class="social-icon" href="mailto:fiiginsa@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-                <a class="social-icon" href="https://www.instagram.com/fiiginsa/"><i class="fa-brands fa-instagram"></i></a>
-                <a class="social-icon" href="https://www.twitch.tv/gaminginsatournament"><i class="fa-brands fa-twitch"></i></a>
+            <div id="socials-container">
+                <div id="socials">
+                    <a class="social-icon" href="https://twitter.com/gaming_insa"><i class="fa-brands fa-twitter"></i></a>
+                    <a class="social-icon" href="https://www.facebook.com/FederationInterINSAsdeGaming/"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a class="social-icon" href="https://discord.gg/RRknBKaGcQ"><i class="fa-brands fa-discord"></i></a>
+                    <a class="social-icon" href="mailto:fiiginsa@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    <a class="social-icon" href="https://www.instagram.com/fiiginsa/"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="social-icon" href="https://www.twitch.tv/gaminginsatournament"><i class="fa-brands fa-twitch"></i></a>
+                </div>
             </div>
             <!--div id="tabs">
                 <a href="#partenaires">PARTENAIRES</a>
