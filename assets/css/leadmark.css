@@ -11546,6 +11546,14 @@ textarea.form-control {
   background: #ffbca8;
 }
 
+#about img {
+  max-width: 300px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 .section {
   padding: 80px 0;
 }
@@ -11710,6 +11718,7 @@ textarea.form-control {
 .event-section .event-container .description {
   margin-left: auto !important;
   margin-right: auto !important;
+  width: 50%;
 }
 
 .event-section .event-container .event-item {
