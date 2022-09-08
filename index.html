@@ -1,321 +1,235 @@
-<head>
-<script src="https://kit.fontawesome.com/21387eecb7.js" crossorigin="anonymous"></script>
-<style>
-    :root{
-        --fiig-purple-darken: #56203d;
-    }
-
-    * {
-        font-family: 'Source Sans Pro',sans-serif;
-    }
-
-    html {
-        scroll-behavior: smooth;
-    }
-
-    body {
-        background-color:#F0E7D8;
-        margin: 0;
-    }
-
-    h1 {
-        color: #56203d;
-        font-weight: bold;
-    }
-
-    h2 {
-
-    }
-
-    h3 {
-
-    }
-
-    body {
-        background-image: url('minecraft_banner.png');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-    }
-
-    #background {
-        position: sticky;
-        top: 0;
-        left: 0;
-        max-width: 100vw;
-        max-height: 100vh;
-    }
-
-    #accueil {
-        height: 100vh;
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    #fiig {
-        color: var(--fiig-purple-darken);
-        outline: 0.3rem solid var(--fiig-purple-darken);
-        border-radius: 1rem;
-        max-width: 50%;
-        min-width: 10rem;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #fiig > .image {
-        border-radius: 1rem;
-    }
-
-    #socials {
-        outline: 0.3rem solid var(--fiig-purple-darken);
-        border-radius: 1rem;
-        background-color:#eff7fa;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    #socials-container {
-        display: flex;
-        justify-content: center;
-    }
-
-    .social-icon {
-        color: #56203d;
-        margin: 7px;
-        margin-bottom: 3px;
-        font-size: 2rem;
-    }
-
-    #git  {
-        width: 100%;
-        height:100vh;
-        background-color:#F0E7D8;
-        display: flex;
-        justify-content: center;
-    }
-
-    #git > .container {
-        position: relative;
-    }
-
-    #minecraft {
-        width: 100%;
-        height:100vh;
-        background-color:#8075ff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #minecraft > .container {
-        position: relative;
-        width: 100%;
-    }
-
-    #partenaires {
-        position:relative;
-        background-color:#F0E7D8;
-        text-align: center;
-        padding-top: 1%;
-        padding-bottom: 1%;
-    }
-
-    #statistiques {
-        position:relative;
-        background-color:#8075ff;
-        text-align: center;
-        padding-top: 1%;
-        padding-bottom: 1%;
-    }
-
-    #edition-2022 {
-        position:relative;
-        background-color:#F0E7D8;
-        text-align: center;
-        padding-top: 1%;
-        padding-bottom: 1%;
-    }
-
-    #edition-2022 > div > img {
-        border-radius: 1rem;
-        outline: 1rem solid #F0E7D8;
-    }
-
-    
-
-    .image {
-        max-width: 100%;
-        max-height: 100%;  
-        width:100%;
-        display: block;
-    }
-
-    .text {
-        color: white;
-        font-size: 20px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        text-align: center;
-    }
-
-
-
-    .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 0;
-        transition: .5s ease;
-        background-color: #56203d;
-    }
-
-    .container:hover .overlay {
-        opacity: 1;
-    }
-
-    .partenaire {
-        width: 20%;
-        margin: 2.5%;
-        padding: 2%;
-        background-color: #F0E7D8;
-        outline: 1rem solid #8075ff;
-        border-radius: 1rem;
-    }
-
-    .partenaire > a > img {
-        width: 100%;
-    }
-
-    .stats-circle {
-        background-color: #56203d;
-        border-radius: 4rem;
-        width: 8rem;
-        height: 100%;
-        line-height: 8rem;
-        color:#F0E7D8;
-        font-size: 2.5rem;
-        text-align: center;
-    }
-
-    .stats > span {
-        color: #56203d;
-        font-size: 2rem;
-    }
-
-    .stats-circle > span, .stats > span {
-        display: inline-block;
-        vertical-align: middle;
-    }
-
-    .stats {
-        display:flex;
-        height: 8rem;
-        line-height: 8rem;
-        margin: 2rem;
-        min-width: 20%;
-    }
-
-
-</style>
-</head>
-
 <!DOCTYPE html>
-<html>
-    <body>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with LeadMark landing page.">
+    <meta name="author" content="FIIG">
+    <title>Fédération Inter-INSAs de Gaming</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + LeadMark main styles -->
+	<link rel="stylesheet" href="assets/css/leadmark.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
-        <!--div id="background">
-            <img src="image14.png">
-        </div-->
-
-        <div id="accueil">
-            <div id="fiig">
-                <img class="image" src="fiig_banner.png">
+    <!-- page Navigation -->
+    <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/imgs/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#events">Evénements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#partners">Partenaires</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#figures">Chiffres</a>
+                    </li>
+                </ul>
             </div>
-            <br>
-            <div id="socials-container">
-                <div id="socials">
-                    <a class="social-icon" href="https://twitter.com/gaming_insa"><i class="fa-brands fa-twitter"></i></a>
-                    <a class="social-icon" href="https://www.facebook.com/FederationInterINSAsdeGaming/"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a class="social-icon" href="https://discord.gg/RRknBKaGcQ"><i class="fa-brands fa-discord"></i></a>
-                    <a class="social-icon" href="mailto:fiiginsa@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-                    <a class="social-icon" href="https://www.instagram.com/fiiginsa/"><i class="fa-brands fa-instagram"></i></a>
-                    <a class="social-icon" href="https://www.twitch.tv/gaminginsatournament"><i class="fa-brands fa-twitch"></i></a>
+        </div>
+    </nav>
+    <!-- End Of Second Navigation -->
+
+    <!-- Page Header -->
+    <header class="header">
+        <div class="overlay">
+            <h1 class="title">Fédération Inter-INSAs</h1>
+            <h1 class="title">de Gaming</h1>
+        </div>
+        <div class="mouse-icon"><div class="wheel"></div></div>
+    </header>
+    <!-- End Of Page Header -->
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-6 pr-md-5 mb-4 mb-md-0">
+                    <h6 class="section-title mb-0">A propos de la FIIG</h6>
+                    <h6 class="section-subtitle mb-4">Architecto provident deserunt</h6>
+                    <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate molestiae temporibus et tenetur unde quasi, cum nemo quo, molestias architecto alias voluptatibus corrupti corporis earum. Necessitatibus maxime modi ipsam, quod!</p>
+                    <img src="assets/imgs/about.jpg" alt="" class="w-100 mt-3 shadow-sm">
+                </div>
+                <div class="col-md-6 pl-md-5">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="assets/imgs/about-1.jpg" alt="" class="w-100 shadow-sm">
+                        </div>
+                        <div class="col-6">
+                            <img src="assets/imgs/about-2.jpg" alt="" class="w-100 shadow-sm">
+                        </div>
+                        <div class="col-12 mt-4">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo iusto quidem laborum atque, sapiente ipsa excepturi fuga cum sed in assumenda eos quasi harum culpa laboriosam nulla, incidunt quae. Voluptatum.</p>
+                            <p><b>Aliquid fuga sunt velit, temporibus molestias ab. Ipsa nesciunt totam, aliquid dignissimos.</b><br>
+                            </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt ut a dolorem, consectetur, eos suscipit consequatur magnam est dolore obcaecati adipisci expedita, vero, iste ducimus qui numquam animi facilis officia?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>              
+        </div>
+    </section>
+    <!-- End OF About Section -->
+
+    <!-- Events Section -->
+    <section id="events" class="section event-section">
+        <div class="container">
+            <h6 class="section-title text-center">Nos événements</h6>
+            <div class="filters">
+                <a href="javascript:void(0);" data-filter="git" class="active filters-option">
+                    GIT
+                </a>
+                <a href="javascript:void(0);" data-filter="minecraft" class="filters-option">
+                    Serveur Minecraft
+                </a>
+                <a href="javascript:void(0);" data-filter="communities" class="filters-option">
+                    Communautés
+                </a>
+            </div>
+            <div class="event-container">
+                <div class="event-item git">
+                    <img src="assets/imgs/logo-git.png" class="img-fluid" alt="Logo GIT">
+                </div>
+                <div class="event-item git description">
+                    <p class="subtitle">Un ensemble de tournois.</p>
+                </div>
+
+                <div class="event-item minecraft inactive">
+                    <img src="assets/imgs/logo-minecraft.png" class="img-fluid" alt="Logo Minecraft">
+                </div>
+                <div class="event-item minecraft description inactive">
+                    <p class="subtitle">Nous hébergeons le meilleur serveur minecraft au monde.</p>
+                </div>
+
+                <div class="event-item communities inactive">
+                    <img src="assets/imgs/manette.png" class="img-fluid" alt="Communautés">
+                </div>
+                <div class="event-item communities description inactive">
+                    <p class="subtitle">Pleins de communautés</p>
+                </div>
+            </div>   
+        </div>            
+    </section>
+    <!-- End of event section -->
+
+    <!-- Blog Section -->
+    <section class="section" id="partners">
+        <div class="container">
+            <h6 class="section-title mb-0 text-center">Nos partenaires</h6>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card border-0 mb-4">
+                        <div class="logo">
+                            <img src="assets/imgs/logo-minestrator.jpg" alt="" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">Minestrator</h6>
+                            <p>Hébergeur de serveurs minecraft.</p>
+                            <a href="https://minestrator.com/" class="small text-muted">Site web</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 mb-4">
+                        <div class="logo">
+                            <img src="assets/imgs/logo-aei.png" alt="" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">AEI INSA</h6>
+                            <p>L'AEI est une association étudiante qui a pour objectif premier de promouvoir le groupe INSA, ses valeurs et de faciliter la communication inter-INSA.</p>
+                            <a href="https://www.aei-insa.fr/" class="small text-muted">Site web</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!--div id="tabs">
-                <a href="#partenaires">PARTENAIRES</a>
-                <a href="#stats">STATISTIQUES</a>
-                <a href="#edition-2022">EDITION 2021-2022</a>
-            </div-->
         </div>
+    </section>
+    <!-- End of Blog Section -->
 
-        <div id="git">
-            <div class="container">
-                <img src="affiche_git_2021_logo_aei_a4.png" class="image">
-                <div class="overlay">
-                    <div class="text">Ceci est le GIT</div>
+    <!-- Testmonial Section -->
+    <section class="section" id="figures">
+        <div class="container">
+            <h6 class="section-title text-center mb-0">La FIIG en chiffres</h6>
+            <div class="row">
+                <div class="col-md-4 my-3 my-md-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="media align-items-center mb-3">
+                                <img class="mr-3" src="assets/imgs/avatar.jpg" alt="">
+                                <div class="media-body">
+                                    <h6 class="mt-1 mb-0">John Doe</h6>
+                                    <small class="text-muted mb-0">Business Analyst</small>     
+                                </div>
+                            </div>
+                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus enim modi, id dicta reiciendis itaque.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-3 my-md-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="media align-items-center mb-3">
+                                <img class="mr-3" src="assets/imgs/avatar-1.jpg" alt="">
+                                <div class="media-body">
+                                    <h6 class="mt-1 mb-0">Maria Garcia</h6>
+                                    <small class="text-muted mb-0">Insurance Agent</small>      
+                                </div>
+                            </div>
+                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus enim modi, id dicta reiciendis itaque.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-3 my-md-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="media align-items-center mb-3">
+                                <img class="mr-3" src="assets/imgs/avatar-2.jpg" alt="">
+                                <div class="media-body">
+                                    <h6 class="mt-1 mb-0">Mason Miller</h6>
+                                    <small class="text-muted mb-0">Residential Appraiser</small>        
+                                </div>
+                            </div>
+                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus enim modi, id dicta reiciendis itaque.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
+    <!-- End of Testmonial Section -->
 
-        <div id="minecraft">
-            <div class="container">
-                <img src="minecraft_banner.png" class="image">
-                <div class="overlay">
-                    <div class="text">Ceci est le serveur Minecraft</div>
-                </div>
-            </div>
+    <!-- Footer Section -->
+    <section class="section has-img-bg pb-0">
+        <div class="container">
+            <!-- Page Footer -->
+            <footer class="mt-5 py-4 border-top border-secondary">
+                <p class="mb-0 small">&copy; <script>document.write(new Date().getFullYear())</script> Fédération Inter-INSAs de Gaming</p>
+            </footer>
+            <!-- End of Page Footer -->
         </div>
+    </section>
+	
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
 
-        <div id="partenaires">
-            <h1>PARTENAIRES</h1>
-            <div style="display:flex;justify-content: center;">
-                <div class="partenaire">
-                    <a>
-                        <img src="logo-aei.png">
-                    </a>
-                </div>
-                <div class="partenaire">
-                    <a>
-                        <img src="logo-minestrator.jpg">
-                    </a>
-                </div>
-            </div>
-        </div>
+    <!-- bootstrap 3 affix -->
+	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
 
-        <div id="statistiques">
-            <h1>STATISTIQUES</h1>
-            <div style="display:flex; flex-wrap: wrap;">
-                <div class="stats"><div class="stats-circle"><span>300</span></div><span style="margin-left:1rem">participants aux tournois</span></div>
-                <div class="stats"><div class="stats-circle"><span>350</span></div><span style="margin-left:1rem">inscrits sur le serveur Minecraft</span></div>
-                <div class="stats"><div class="stats-circle"><span>300</span></div><span style="margin-left:1rem">followers sur la chaîne Twitch</span></div>
-                <div class="stats"><div class="stats-circle"><span>4.400</span></div><span style="margin-left:1rem">spectateurs en "vues lives" sur la chaîne Twitch</span></div>
-                <div class="stats"><div class="stats-circle"><span>10.000</span></div><span style="margin-left:1rem">personnes touchées par notre publication Facebook la plus populaire.</span></div>
-            </div>
-            
-        </div>
+    <!-- Index js -->
+    <script src="assets/js/index.js"></script>
 
-        <div id="edition-2022">
-            <h1>EDITION PRECEDENTE</h1>
-            <div>
-                <img src="classement_2022.jpg">
-            </div>
-        </div>
-
-        <div id="about">
-
-        </div>
-
-    </body>
+</body>
 </html>
