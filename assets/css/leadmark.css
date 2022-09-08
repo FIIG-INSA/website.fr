@@ -11319,12 +11319,12 @@ textarea.form-control {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ff5a29;
+  background: #56203d;
   border-radius: 20px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ff6e42;
+  background: #83315d;
 }
 
 .table.v-align-center th, .table.v-align-center td {
@@ -11402,8 +11402,8 @@ textarea.form-control {
 }
 
 .footer .social-links a:hover {
-  background: #ff6e42;
-  border-color: #ff6e42;
+  background: #56203d;
+  border-color: #56203d;
   color: #fff;
   text-decoration: none;
 }
@@ -11706,7 +11706,7 @@ textarea.form-control {
 .event-section .filters a.active {
   opacity: 1;
   border-radius: 100px;
-  background: #ff6e42;
+  background: #56203d;
   color: #fff;
 }
 
@@ -11719,6 +11719,7 @@ textarea.form-control {
   margin-left: auto !important;
   margin-right: auto !important;
   width: 50%;
+  text-align: justify;
 }
 
 .event-section .event-container .event-item {
